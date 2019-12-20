@@ -1,0 +1,4 @@
+<resources>
+<string name="app_name">NY Letter</string>
+    <string name="button_default_height">24dp</string>
+</resources>
