@@ -18,13 +18,18 @@ import android.view.MotionEvent;
 import android.view.SubMenu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {   //TODO: passwords for groups
 
@@ -32,9 +37,22 @@ public class MainActivity extends AppCompatActivity {   //TODO: passwords for gr
     private Button button_letters_for_you;
     private Button button_music;
 
-//    protected FirebaseAuth mAuth;
+    private CheckBox isAnonim;
+    private Spinner spinner;
+    private EditText port;
+    private EditText pass;
 
-    private FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+//    private FirebaseAuth mAuth;
+//
+//    private FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+//
+//    public void getInstance(){
+//        // Write a message to the database
+//        FirebaseDatabase database = FirebaseDatabase.getInstance();
+//        DatabaseReference myRef = database.getReference("message");
+//
+//        myRef.setValue("Hello, World!");
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +66,11 @@ public class MainActivity extends AppCompatActivity {   //TODO: passwords for gr
         button_send = (Button) findViewById(R.id.button_send);
         button_letters_for_you = (Button) findViewById(R.id.button_letters_for_you);
         //button_send.setId(View.generateViewId());
+        //TODO: FireBase
+        isAnonim = (CheckBox) findViewById(R.id.checkBox);
+        spinner = (Spinner) findViewById(R.id.spinner);
+        port = (EditText) findViewById(R.id.edit_text_port);
+        pass = (EditText) findViewById(R.id.edit_text_pass);
 
         button_music.setOnClickListener(button_musicClickListener);
         button_send.setOnClickListener(button_sendClickListener);
