@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:enabled="true"
-            android:text="There are letters for you!" />
+            android:text="Your letters" />
 
         <Button
             android:id="@+id/button_music"

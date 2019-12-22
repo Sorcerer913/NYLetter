@@ -50,6 +50,8 @@ public class MusicActivity extends AppCompatActivity {  //TODO: nice layout with
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music);
 
+        currentMediaID = R.raw.letitsnow;
+
         button_play_pause = (ImageButton) findViewById(R.id.button_play_pause);
         button_forwards = (ImageButton) findViewById(R.id.button_forwards);
         button_backward = (ImageButton) findViewById(R.id.button_backward);

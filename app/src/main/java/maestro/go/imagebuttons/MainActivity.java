@@ -114,14 +114,14 @@ public class MainActivity extends AppCompatActivity {   //TODO: passwords for gr
         }
     };
 
-    @Override
-    public void onStart() {
-        super.onStart();
+//    @Override
+//    public void onStart() {
+//        super.onStart();
 //        // Check if user is signed in (non-null) and update UI accordingly.
 //        FirebaseUser currentUser = mAuth.getCurrentUser();
 //        updateUI(currentUser);
-
-    }
+//
+//    }
 
     @Override
     public void onBackPressed() {
